@@ -8,10 +8,10 @@ const __dirname = path.dirname(__filename);
 const app = express();
 const PORT = 3000;
 
-// Serve static files from the website directory
+// Serve static files from the root directory (where HTML files are located)
 app.use(express.static(__dirname));
 
-// Handle all routes by serving the appropriate HTML file
+// Handle the root route
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });

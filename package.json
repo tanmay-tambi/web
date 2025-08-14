@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "node server.js"
+    "dev": "node server.js",
+    "build": "echo 'No specific build process needed for this static site. Files are ready as is.'"
   },
   "dependencies": {
     "express": "^4.18.2"

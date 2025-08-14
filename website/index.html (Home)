@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tanmay Tambi | Portfolio</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a href="index.html" style="font-weight:bold;font-size:1.3em;color:#18bc9c;text-decoration:none;">Tanmay Tambi</a>
+    <span class="menu-toggle" onclick="document.querySelector('header').classList.toggle('active')">&#9776;</span>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="hero">
+      <h1>Hi, I’m Tanmay Tambi</h1>
+      <h2>Aspiring Entrepreneur | IPMAT Aspirant | Event Organizer & Marketing Enthusiast</h2>
+      <p>
+        A passionate student entrepreneur and event organizer eager to shape the future of business, branding, and leadership. With hands-on experience hosting Shark Tank events and driving marketing for leading school initiatives, I thrive at bringing ideas to life and empowering fellow changemakers.
+      </p>
+      <div class="cta">
+        <a href="projects.html">View My Work</a>
+        <a href="contact.html">Contact Me</a>
+      </div>
+    </div>
+    <section>
+      <h3>Highlights</h3>
+      <ul class="skills">
+        <li>Lead Organizer & Host: 3 Shark Tank events</li>
+        <li>Head of Marketing – Commerce Fest 2025 (DPS Bangalore North)</li>
+        <li>Founder: Edugame – Gamified Learning Platform</li>
+        <li>Internships: YogiFi, Muskurahat Foundation, Scholastic India</li>
+        <li>Scholastic Alumni Internship Graduate</li>
+        <li>Young Changemakers Programme (IIM)</li>
+      </ul>
+    </section>
+    <section>
+      <h3>Connect</h3>
+      <div class="contact-details">
+        <span>📧 <a href="mailto:tanmay.tambi@example.com">tanmay.tambi@example.com</a></span>
+        <span>🔗 <a href="#">LinkedIn</a></span>
+        <span>📷 <a href="#">Instagram</a></span>
+      </div>
+    </section>
+  </div>
+  <footer>© 2025 Tanmay Tambi. All rights reserved.</footer>
+  <script>
+    // Mobile nav
+    // (see CSS for "active" toggle)
+  </script>
+</body>
+</html>

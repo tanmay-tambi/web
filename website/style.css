@@ -1,0 +1,124 @@
+/* style.css */
+
+:root {
+  --primary: #2c3e50;
+  --accent: #18bc9c;
+  --bg: #f4f8fb;
+  --white: #fff; --dark: #181818;
+}
+
+body {
+  background: var(--bg);
+  color: var(--primary);
+  font-family: 'Montserrat', Arial, sans-serif;
+  margin: 0;
+}
+
+header {
+  background: var(--white);
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 5vw;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header nav a {
+  color: var(--primary);
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+header nav a:hover { color: var(--accent); }
+
+.container {
+  max-width: 900px;
+  margin: 2.5rem auto;
+  background: var(--white);
+  box-shadow: 0 1px 16px 0 rgba(40,76,101,0.07);
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.hero h1 { font-size: 2.5rem; margin-top: 0; color: var(--primary);}
+.hero h2 { font-size: 1.2rem; color: var(--accent);}
+.hero p { margin: 1.5rem 0 1.5rem; font-size: 1.05rem; line-height: 1.7;}
+.cta a {
+  background: var(--accent);
+  color: var(--white);
+  padding: 0.75rem 2rem;
+  border-radius: 24px;
+  text-decoration: none;
+  margin: 0 0.7rem;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+.cta a:hover { background: #149174; }
+
+section:not(:last-child) { margin-bottom: 2.5rem; }
+
+.skills, .services-list, .projects-list, .testimonials-list, .contact-details {
+  display: flex; flex-wrap: wrap; gap: 1.2rem; list-style: none; padding: 0;
+}
+
+.skills li, .services-list li, .testimonials-list li {
+  background: var(--bg); border-radius: 8px; padding: 0.7rem 1.3rem; font-size: 1rem; box-shadow: 0 0 0.2rem #eee;
+}
+
+.projects-list {
+  gap: 1.7rem;
+}
+
+.project-card {
+  background: #f7fbfc;
+  border-radius: 11px;
+  box-shadow: 0 0 0.4rem #e7eaf0;
+  padding: 1.3rem;
+  flex: 1 1 220px;
+}
+.project-card h4 { margin-top: 0; margin-bottom: .2em;}
+
+.testimonials-list li {
+  max-width: 320px;
+  font-style: italic;
+}
+
+.contact-form label { display: block; margin-top: 1rem; font-weight: 500;}
+.contact-form input, .contact-form textarea {
+  width: 100%; padding: 0.7rem; border-radius: 7px; border: 1px solid #bbb;
+  margin-top: 0.2rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.92rem;
+  color: #79879c;
+  background: #f3f7fa;
+  margin-top: 3rem;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .container { padding: 1rem 1vw;}
+  .projects-list { flex-direction: column; }
+  header { flex-direction: column; }
+}
+
+/* Navbar Hamburger */
+.menu-toggle { display: none; }
+@media (max-width: 700px) {
+  header nav { display: none; flex-direction: column;}
+  .menu-toggle { display: block; cursor: pointer;}
+  header.active nav { display: flex; }
+}

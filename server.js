@@ -9,11 +9,11 @@ const app = express();
 const PORT = 3000;
 
 // Serve static files from the website directory
-app.use(express.static(path.join(__dirname, 'website')));
+app.use(express.static(__dirname));
 
 // Handle all routes by serving the appropriate HTML file
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'website', 'index.html'));
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 app.listen(PORT, () => {
